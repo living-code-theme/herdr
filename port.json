@@ -1,0 +1,29 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "Herdr",
+  "slug": "herdr",
+  "group": "AI & Agents",
+  "emoji": "🐑",
+  "description": "Living Code for Herdr: complete native theme overrides for the sidebar, panels, selections, status indicators and workspace chrome.",
+  "homepage": "https://herdr.dev",
+  "quick": "Install the native theme files",
+  "aliases": [
+    "herd",
+    "herdrdev",
+    "agent workspace"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "themes/living-code-night.toml",
+    "themes/living-code-frost.toml",
+    "themes/living-code-paper.toml",
+    "themes/living-code-signal.toml"
+  ],
+  "images": []
+}

@@ -1,0 +1,32 @@
+{
+  "name": "living-code-herdr",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Living Code for Herdr: complete native theme overrides for the sidebar, panels, selections, status indicators and workspace chrome.",
+  "license": "MIT",
+  "author": "Living Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/living-code-theme/herdr.git"
+  },
+  "homepage": "https://living-code.dev/ports/herdr/",
+  "packageManager": "pnpm@12.9.0",
+  "engines": {
+    "node": ">=22.22"
+  },
+  "livingCode": {
+    "kind": "files"
+  },
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs && node --test test/*.test.mjs",
+    "check:generated": "node scripts/generate.mjs --check",
+    "palette:update": "node scripts/update-palette.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "smol-toml": "1.6.0"
+  }
+}

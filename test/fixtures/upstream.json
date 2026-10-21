@@ -1,0 +1,31 @@
+{
+  "repository": "herdrdev/herdr",
+  "revision": "a2008661cd4a89ff6df22bf4a6b472bd413018be",
+  "paths": [
+    "src/config/theme.rs",
+    "src/terminal_theme.rs"
+  ],
+  "checked": "2026-10-21",
+  "contract": "toml",
+  "colors": [
+    "accent",
+    "panel_bg",
+    "sidebar_bg",
+    "active_row_bg",
+    "selection_bg",
+    "surface0",
+    "surface1",
+    "surface_dim",
+    "overlay0",
+    "overlay1",
+    "text",
+    "subtext0",
+    "mauve",
+    "green",
+    "yellow",
+    "red",
+    "blue",
+    "teal",
+    "peach"
+  ]
+}

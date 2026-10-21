@@ -1,0 +1,25 @@
+# Merge this theme section into your Herdr config; preserve unrelated settings.
+[theme]
+name = "catppuccin-latte"
+auto_switch = false
+
+[theme.custom]
+accent = "#187d6e"
+panel_bg = "#f4f7f9"
+sidebar_bg = "#e0e5e9"
+active_row_bg = "#e3e9ed"
+selection_bg = "#c2ccd3"
+surface0 = "#e3e9ed"
+surface1 = "#d2d8dd"
+surface_dim = "#ebeff2"
+overlay0 = "#6b7378"
+overlay1 = "#50565a"
+text = "#12171a"
+subtext0 = "#50565a"
+mauve = "#81558e"
+green = "#3b7a35"
+yellow = "#8f6213"
+red = "#a74541"
+blue = "#2b6991"
+teal = "#187d6e"
+peach = "#a04f27"
