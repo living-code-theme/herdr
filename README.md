@@ -7,18 +7,40 @@
 
 ## Previews
 
-Real application screenshots have not been captured yet.
+<table data-lc-flavors>
+<tr>
+<td width="50%" valign="top">
+<strong>Night</strong><br><sub>Dark · full palette</sub><br><br>
+<a href="images/night.png"><img src="images/night.png" alt="Herdr running Living Code Night" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Frost</strong><br><sub>Dark · softer chroma</sub><br><br>
+<a href="images/frost.png"><img src="images/frost.png" alt="Herdr running Living Code Frost" width="640"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<strong>Paper</strong><br><sub>Light · near-white slate</sub><br><br>
+<a href="images/paper.png"><img src="images/paper.png" alt="Herdr running Living Code Paper" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Signal</strong><br><sub>Dark · teal accent</sub><br><br>
+<a href="images/signal.png"><img src="images/signal.png" alt="Herdr running Living Code Signal" width="640"></a>
+</td>
+</tr>
+</table>
+
+Select any preview to view the image at full size.
 
 ## Installation
 
 ```sh
-git clone https://github.com/living-code-theme/herdr.git
-cd herdr
+flavor=night # night, frost, paper, or signal
+theme_dir="$(dirname "${HERDR_CONFIG_PATH:-${XDG_CONFIG_HOME:-$HOME/.config}/herdr/config.toml}")/themes"
+curl -fsSL --create-dirs -o "$theme_dir/living-code-$flavor.toml" "https://raw.githubusercontent.com/living-code-theme/herdr/main/themes/living-code-$flavor.toml"
 ```
 
-Open the desired `themes/living-code-*.toml` file and merge its `[theme]` and `[theme.custom]` sections into your Herdr config, normally `~/.config/herdr/config.toml`. Replace existing theme sections rather than appending duplicate TOML tables; keep your workspaces, keybindings and integrations. `HERDR_CONFIG_PATH` overrides this location.
-
-Restart Herdr or reload the running server config:
+Herdr currently has no standalone theme-file import. Merge `[theme]` and `[theme.custom]` from the downloaded fragment into your active `config.toml` (normally `~/.config/herdr/config.toml`, or `HERDR_CONFIG_PATH`). Replace existing theme tables rather than appending duplicates. **Do not replace your whole config**: keep workspaces, keybindings and integrations. Then reload:
 
 ```sh
 herdr server reload-config
@@ -31,36 +53,36 @@ Expand a flavor for its full-size preview and activation instructions.
 <details data-lc-flavor="night">
 <summary><strong>Night</strong> · Dark · full palette</summary>
 
-A real application capture is not available yet.
+<p><a href="images/night.png"><img src="images/night.png" alt="Herdr running Living Code Night" width="1280"></a></p>
 
-Merge `[theme]` and `[theme.custom]` from `themes/living-code-night.toml` into the active config, then run `herdr server reload-config`.
+Merge `[theme]` and `[theme.custom]` from the downloaded `living-code-night.toml` into the active config, then run `herdr server reload-config`.
 
 </details>
 
 <details data-lc-flavor="frost">
 <summary><strong>Frost</strong> · Dark · softer chroma</summary>
 
-A real application capture is not available yet.
+<p><a href="images/frost.png"><img src="images/frost.png" alt="Herdr running Living Code Frost" width="1280"></a></p>
 
-Merge `[theme]` and `[theme.custom]` from `themes/living-code-frost.toml` into the active config, then run `herdr server reload-config`.
+Merge `[theme]` and `[theme.custom]` from the downloaded `living-code-frost.toml` into the active config, then run `herdr server reload-config`.
 
 </details>
 
 <details data-lc-flavor="paper">
 <summary><strong>Paper</strong> · Light · near-white slate</summary>
 
-A real application capture is not available yet.
+<p><a href="images/paper.png"><img src="images/paper.png" alt="Herdr running Living Code Paper" width="1280"></a></p>
 
-Merge `[theme]` and `[theme.custom]` from `themes/living-code-paper.toml` into the active config, then run `herdr server reload-config`.
+Merge `[theme]` and `[theme.custom]` from the downloaded `living-code-paper.toml` into the active config, then run `herdr server reload-config`.
 
 </details>
 
 <details data-lc-flavor="signal">
 <summary><strong>Signal</strong> · Dark · teal accent</summary>
 
-A real application capture is not available yet.
+<p><a href="images/signal.png"><img src="images/signal.png" alt="Herdr running Living Code Signal" width="1280"></a></p>
 
-Merge `[theme]` and `[theme.custom]` from `themes/living-code-signal.toml` into the active config, then run `herdr server reload-config`.
+Merge `[theme]` and `[theme.custom]` from the downloaded `living-code-signal.toml` into the active config, then run `herdr server reload-config`.
 
 </details>
 
@@ -71,6 +93,8 @@ Every documented custom token is supplied. `auto_switch = false` makes the chose
 ## Compatibility
 
 The custom-token interface is present in Herdr 0.9.3 and is checked against the pinned upstream Rust fields. This themes Herdr’s own UI. Embedded terminal panes inherit the host terminal’s palette and application-specific themes, so install the matching Living Code terminal theme too. No agent sessions or workspaces are created by this port.
+
+Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn.
 
 ## Contributing
 

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "scene": "Herdr native workspace UI in a dedicated capture session. No user server or agent session is accessed.",
+  "versionCommand": [
+    "herdr",
+    "--version"
+  ],
+  "fixtures": []
+}

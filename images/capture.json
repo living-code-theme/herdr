@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "scene": "Herdr native workspace UI in a dedicated capture session. No user server or agent session is accessed.",
+  "inputs": {
+    "capture/app.py": "7d87584c43529e91e14f3e167c9722cd1d2b09a7ca6e3d68509b250728b4011a",
+    "capture/config.json": "fb4670588df0ca759e3c789dce9351989773d99961a1af5de73f5fd6b5039816",
+    "capture/flake.lock": "e3750f7ba25d0b1971722cdd83b2f07e32528980a4d6a9a1ea55177747de5752",
+    "capture/flake.nix": "711a632ff388a3e0b865a27869cf7cbd7a16672799b7f0f365d71936490a46f1",
+    "palette/theme.json": "d735cf005e3b2807953226c0119e384f6f8a3d2b3167443371cb302a8c689cdb",
+    "port.json": "00ddf3071c2fc1d4011e81a1b3f8f4121753cc2c4efbc6c247736907abe6f2da",
+    "scripts/capture.py": "6830da447e48a4ab5511012b5222763677214e8a98683b94c60248765202ca9f",
+    "themes/living-code-frost.toml": "59a7c487613038f0ed8d54d19ab9e235ba3a4ca607be53a51708e0061cdf0cb8",
+    "themes/living-code-night.toml": "ef5b890803ba5c28f11bcb274bb2aceb0bfd6014b27592fb553898e5f7e5436b",
+    "themes/living-code-paper.toml": "182ebb985ed19168b47b47b6550c8a2e89b07b12c4300d9df5cd6c9f5ff46efb",
+    "themes/living-code-signal.toml": "6acbc7df71f03a0a56cb0eace7805cf32c62d3274f5e4ff2795eb9845a3aa6b2"
+  },
+  "images": {
+    "night": {
+      "path": "images/night.png",
+      "sha256": "e5b150dc606523e4dce9e1b70b0aee36cc2088edf428709636172ba90322c4f7",
+      "application": "herdr 0.9.3",
+      "paletteColors": [
+        "#00a692",
+        "#020405",
+        "#05080b",
+        "#090e11",
+        "#12171a",
+        "#747c80",
+        "#9ba0a2",
+        "#bf91cd",
+        "#e2e9ee"
+      ]
+    },
+    "frost": {
+      "path": "images/frost.png",
+      "sha256": "aaf3e9839dd063bb908b16eaa94c539c9a28abd812b67343e59fdf5cebf5d5da",
+      "application": "herdr 0.9.3",
+      "paletteColors": [
+        "#050a0f",
+        "#0a1016",
+        "#10171c",
+        "#171e24",
+        "#43a997",
+        "#7d8489",
+        "#9ba0a2",
+        "#bc9ec6",
+        "#e2e9ee"
+      ]
+    },
+    "paper": {
+      "path": "images/paper.png",
+      "sha256": "60571b1fd2e6b45b790e51ef8f3dc22aa23ed5e0894de625b01219dadd672ce0",
+      "application": "herdr 0.9.3",
+      "paletteColors": [
+        "#12171a",
+        "#187d6e",
+        "#50565a",
+        "#6b7378",
+        "#81558e",
+        "#e0e5e9",
+        "#e3e9ed",
+        "#ebeff2",
+        "#f4f7f9"
+      ]
+    },
+    "signal": {
+      "path": "images/signal.png",
+      "sha256": "a753b20c4e5c2cced22e66395adb055845eb81c69831320859aee54973c9308f",
+      "application": "herdr 0.9.3",
+      "paletteColors": [
+        "#00a692",
+        "#020405",
+        "#05080b",
+        "#090e11",
+        "#12171a",
+        "#747c80",
+        "#9ba0a2",
+        "#e2e9ee"
+      ]
+    }
+  }
+}
