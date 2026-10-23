@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "scene": "Herdr native workspace UI in a dedicated capture session. No user server or agent session is accessed.",
+  "scene": "Herdr native workspace with four real, flavor-matched Pi local-demo sessions, three tabs and a real Git diff. Dedicated disposable server; no model request, user credentials or user sessions.",
   "versionCommand": [
     "herdr",
     "--version"
   ],
-  "fixtures": []
+  "fixtures": ["capture/review.md", "capture/verification.md", "capture/implementation.md", "capture/workspace.py", "capture/pi-themes/README.md", "capture/pi-themes/living-code-night.json", "capture/pi-themes/living-code-frost.json", "capture/pi-themes/living-code-paper.json", "capture/pi-themes/living-code-signal.json"]
 }

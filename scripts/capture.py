@@ -185,7 +185,7 @@ export class FieldRenderer {
         role = lambda name: colors[self.flavor['roles'][name]]['hex']
         options = {'linux_display_server': 'x11', 'hide_window_decorations': 'yes', 'remember_window_size': 'no',
                    'initial_window_width': str(WIDTH), 'initial_window_height': str(HEIGHT),
-                   'font_family': 'DejaVu Sans Mono', 'font_size': '26', 'window_padding_width': '24',
+                   'font_family': 'JetBrains Mono', 'font_size': '22', 'window_padding_width': '24',
                    'cursor_blink_interval': '0', 'enable_audio_bell': 'no', 'allow_remote_control': 'yes',
                    'background': role('bg'), 'foreground': role('fg'), 'cursor': role('cursor'),
                    'selection_background': role('selection'), 'selection_foreground': role('fg')}

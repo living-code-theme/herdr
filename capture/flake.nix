@@ -6,9 +6,9 @@
     devShells.x86_64-linux.default = let
       pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true; };
     in pkgs.mkShell {
-      packages = with pkgs; [ herdr python3 git bash kitty xorg-server xdotool imagemagick dejavu_fonts ];
+      packages = with pkgs; [ herdr pi-coding-agent python3 git bash kitty xorg-server xdotool imagemagick jetbrains-mono ];
       CAPTURE_MESA = "${pkgs.mesa}";
-      FONTCONFIG_FILE = pkgs.makeFontsConf { fontDirectories = [ pkgs.dejavu_fonts ]; };
+      FONTCONFIG_FILE = pkgs.makeFontsConf { fontDirectories = [ pkgs.jetbrains-mono ]; };
     };
   };
 }

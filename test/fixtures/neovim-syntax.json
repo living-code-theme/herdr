@@ -1,0 +1,38 @@
+{
+  "source": {
+    "repository": "living-code-theme/nvim",
+    "revision": "cee6e734c83a03ddaa9cb420b120436301f15458",
+    "path": "lua/living-code/highlights.lua",
+    "sha256": "67190d21e73076aba983cbac1c951ca06981a5e7253d82b85f6a0f26273eb29e"
+  },
+  "flavors": {
+    "night": {
+      "keyword": "#52d7c1", "builtin": "#52d7c1", "function": "#9ae0dd",
+      "variable": "#e2e9ee", "parameter": "#c8cfd4", "property": "#c8cfd4",
+      "type": "#80b6d3", "namespace": "#80b6d3", "string": "#8acb83",
+      "number": "#e18c5f", "constant": "#e18c5f", "operator": "#747c80",
+      "punctuation": "#50565b", "comment": "#747c80"
+    },
+    "frost": {
+      "keyword": "#8ad5c6", "builtin": "#8ad5c6", "function": "#b6e2df",
+      "variable": "#e2e9ee", "parameter": "#c8cfd4", "property": "#c8cfd4",
+      "type": "#98bacd", "namespace": "#98bacd", "string": "#a2cb9d",
+      "number": "#d49c80", "constant": "#d49c80", "operator": "#7d8489",
+      "punctuation": "#50565b", "comment": "#7d8489"
+    },
+    "paper": {
+      "keyword": "#0f695e", "builtin": "#0f695e", "function": "#1f7074",
+      "variable": "#12171a", "parameter": "#2e3437", "property": "#2e3437",
+      "type": "#2b6991", "namespace": "#2b6991", "string": "#3b7a35",
+      "number": "#a04f27", "constant": "#a04f27", "operator": "#6b7378",
+      "punctuation": "#92999f", "comment": "#6b7378"
+    },
+    "signal": {
+      "keyword": "#00a692", "builtin": "#00a692", "function": "#e2e9ee",
+      "variable": "#e2e9ee", "parameter": "#c8cfd4", "property": "#c8cfd4",
+      "type": "#c8cfd4", "namespace": "#c8cfd4", "string": "#e2e9ee",
+      "number": "#e2e9ee", "constant": "#e2e9ee", "operator": "#747c80",
+      "punctuation": "#50565b", "comment": "#747c80"
+    }
+  }
+}

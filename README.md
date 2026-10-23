@@ -105,9 +105,9 @@ Every documented custom token is supplied. `auto_switch = false` makes the chose
 
 ## Compatibility
 
-The custom-token interface is present in Herdr 0.9.3 and is checked against the pinned upstream Rust fields. This themes Herdr’s own UI. Embedded terminal panes inherit the host terminal’s palette and application-specific themes, so install the matching Living Code terminal theme too. No agent sessions or workspaces are created by this port.
+The custom-token interface is present in Herdr 0.9.3 and is checked against the pinned upstream Rust fields. This themes Herdr’s own UI. Embedded terminal panes inherit the host terminal’s palette and application-specific themes, so install the matching Living Code terminal theme **and the agent’s own theme**, such as [Living Code for Pi](https://github.com/living-code-theme/pi#installation). A harness theme cannot override an agent’s syntax engine. Installing this port creates no agent sessions or workspaces.
 
-Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn.
+Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn. The capture recipe alone creates four genuine Pi sessions (reviewer, verifier, implementer and tester) across three tabs, with two agents and a real Git diff visible in the review tab. Each Pi instance explicitly loads the corresponding Living Code flavor; the native Pi themes are vendored in `capture/pi-themes/` with provenance and Neovim role-parity tests. Conversations are labeled local demos, and suggested tests are not presented as executed results. The recipe uses a dedicated disposable Herdr server, never an existing user session; no account, subscription or paid API call is needed.
 
 ## Contributing
 
